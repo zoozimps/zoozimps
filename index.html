@@ -1,0 +1,127 @@
+
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="content-language" content="en-US" />
+  <meta name="description" content="Zoozimps." />
+  <meta name="keywords" content="Zoozimps" />
+  <meta name="robots" content="all" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <title>Zoozimps</title>
+</head>
+
+<body>
+<div id="canvas" />
+<div id="contact">
+  <center>
+    <div id="contact_frame">
+      <p><b>Draw a Zoozimp yourself!</b><br />
+        <b>Send us your own drawing</b> of a Zoozimp in any situation you'd like and
+        <b>we'll post your drawing on this website</b>. For this, send us your
+        drawing either by normal post mail at:<br/>
+            <br/>
+            Manu Cornet<br/>
+            Google<br/>
+            1600 Amphitheater Parkway<br/>
+            Mountain View, CA 94043<br/>
+            USA<br/>
+            <br/>
+        or send an electronic version of your drawing to the email address below.<br />
+
+        <br /><big><a href="drawings.html">Here are some of your drawings!</a></big></br></br>
+      
+          <!-- <br/>What would you like to 
+          see us doing? You can still send your ideas to the email address below. 
+          If your idea is selected we'll get back to you with 
+          new drawings and we'll send out an original drawing to your
+          postal address.</p><br /> -->
+
+      <!--<span><a href="http://www.cafepress.com/zoozimps">Goodies</a></span>-->
+      <br />
+      <p>These images are free to use for non-commercial purposes, but 
+       please quote our name. For commercial purposes, please contact</p>
+      <img src="/images/contact_email.png" />
+      <!-- <p>More coming soon!</p> -->
+    </div>
+  </center>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6456234-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<script type="text/javascript">
+  var IMAGE_PATH = 'images/thumbs/';
+  var IMAGE_EXTENSION = '_thumbnail.png';
+  var allImages = [
+    'angry', '20%', '100%',
+    'baseball', '15%', '0%',
+    'batman', '70%', '100%',
+    'darthvader', '100%', '100%',
+    'double_bass', '0%', '25%',
+    'filter', '20%', '20%',
+    'football', '28%', '0%',
+    'hanging', '100%', '0%',
+    'handshake', '100%', '0%',
+    'holding_apple', '100%', '0%',
+    'inbox', '100%', '20%',
+    'karate', '40%', '0%',
+    'kenny', '80%', '100%',
+    'labels', '100%', '50%',
+    'mario', '50%', '100%',
+    'matrix', '60%', '100%',
+    'napoleon', '60%', '100%',
+    'paperwork', '0%', '40%',
+    'piano_saxophone', '0%', '40%',
+    'pharaoh', '0%', '40%',
+    'polevault', '58%', '0%',
+    'referee', '53%', '0%',
+    'roman', '53%', '0%',
+    'search', '65%', '25%',
+    'settings', '85%', '25%',
+    'ski', '65%', '0%',
+    'sleeping', '20', '100%',
+    'smurf', '90%', '100%',
+    'snare_drum', '0%', '60%',
+    'spam', '15%', '75%',
+    'standing', '0%', '0%',
+    'tennis', '78%', '0%',
+    'trash', '100%', '70%',
+    'viagra', '85%', '75%',
+    'violin', '0%', '80%',
+    'weightlifting', '90%', '0%',
+    'wondering', '30%', '85%',
+    'zorro', '40%', '100%'
+  ];
+
+  var canvasDiv = document.getElementById("canvas");
+
+  for (var i = 0; i < allImages.length; i+= 3) {
+    var imageDiv = document.createElement('div');
+    imageDiv.style.backgroundImage = 'url(' + IMAGE_PATH + allImages[i] + IMAGE_EXTENSION + ')';
+    imageDiv.style.backgroundRepeat = 'no-repeat';
+    imageDiv.style.backgroundPosition = allImages[i + 1] + ' ' + allImages[i + 2];
+    imageDiv.style.height = '100%';
+    imageDiv.style.width = '100%';
+    imageDiv.style.position = 'absolute';
+
+    var zIndex = Math.floor(Math.random() * 100);
+    imageDiv.style.zIndex = '' + zIndex;
+
+    canvasDiv.appendChild(imageDiv);
+  }
+
+</script>
+
+</body>
+</html>
+
+
